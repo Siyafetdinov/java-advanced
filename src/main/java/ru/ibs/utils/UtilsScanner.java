@@ -66,7 +66,7 @@ public class UtilsScanner {
      */
     public static double getDoubleFromInput() {
         String str = getStringConsole();
-        while (!str.matches("^-?\\d+((\\.,)\\d+)?")) {
+        while (!str.matches("^(-?\\d+[.,]?\\d*)$")) {
             System.out.println(ColorANSI.RED + "Ошибка! Повторите снова!" + ColorANSI.RESET);
             str = getStringConsole();
         }
