@@ -8,6 +8,7 @@ import java.util.Scanner;
  * Utils класс. Для работы со сканером
  */
 public class UtilsScanner {
+    private static final Scanner in = new Scanner(System.in);
 
     /**
      * Метод позволяет получить строку, введенную пользователем в консоль.
@@ -15,7 +16,6 @@ public class UtilsScanner {
      * @return строка
      */
     public static String getStringConsole() {
-        Scanner in = new Scanner(System.in);
         return in.nextLine();
     }
 
